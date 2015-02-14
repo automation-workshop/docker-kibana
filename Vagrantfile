@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
     cfg.vm.provider "docker" do |d|
       d.name = cfg.vm.hostname
       d.image = "elasticsearch"
-      d.ports = ["9200:9200"]
+      d.ports = ["9200:9200", "9300:9300"]
       d.volumes = ["/esdata:/usr/share/elasticsearch/data"]
     end
   end

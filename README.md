@@ -20,8 +20,8 @@ a little longer. In this case, the kibana container will exit.  A manual `vagran
 Exposed ports
 -------------
 
-This setup currently exposes `:9200` for Elasticsearch data
-ingestion and `:5601` for the Kibana dashboard.
+This setup currently exposes `:9200` and `:9300` for Elasticsearch data
+ingestion and `:5601` for the Kibana dashboard on `192.168.50.4`.
 
 Shared folders
 --------------
